@@ -12,10 +12,10 @@ public class MemoryMemberRepositoryTest {
 
     MemberRepository repository = new MemoryMemberRepository();
 
-    @AfterEach
-    public void afterEach() { // 각 메소드 마다 실행된 뒤 실행되는 메소드
-        repository.clearStore();
-    }
+//    @AfterEach
+//    public void afterEach() { // 각 메소드 마다 실행된 뒤 실행되는 메소드
+//        repository.clearStore();
+//    }
 
     @Test
     public void findById() {

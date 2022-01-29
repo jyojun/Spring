@@ -1,9 +1,11 @@
 package hello.hellospring.repository;
 
 import hello.hellospring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+//@Repository
 public class MemoryMemberRepository implements MemberRepository{
 
     private static Map<Long, Member> store = new HashMap<>();
@@ -33,7 +35,4 @@ public class MemoryMemberRepository implements MemberRepository{
         return new ArrayList<>(store.values()); // store의 values이 Member이다. 모든 Member 출력
     }
 
-    public void clearStore() {
-        store.clear();
-    }
 }
